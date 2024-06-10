@@ -1,0 +1,28 @@
+.home-offer-title {
+    font-size: 35px;
+    padding: 30px 0px 0px 30px;
+    color: white;
+    text-align: center;
+}
+
+.home-pizza-offer {
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    display: flex;
+}
+
+.home-center {
+    padding: 40px;
+}
+
+.home-bonus-title, .home-other-title {
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .home-offer-title {
+        margin-right: 35px;
+    }
+}
