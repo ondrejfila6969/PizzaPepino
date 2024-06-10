@@ -1,128 +1,116 @@
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: auto;
-    font-family: sans-serif;
-    width: 100%;
-    height: 100%;
-    user-select: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  user-select: none;
 }
 
 header {
-    width: 100%;
-    height: 105px;
-    background-color: black;
-    color: white;
-    display: block;
-    margin: 0 auto;
-    position: fixed;
-    border-bottom: 2px solid silver;
-    z-index: 1000;
+  width: 100%;
+  height: 105px;
+  background-color: black;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  border-bottom: 2px solid silver;
+  z-index: 1000;
 }
 
 .header-responsivity {
-    display: inline-block;
+  display: inline-block;
 }
 
 header .header-p, header .header-mainTitle {
-    display: inline-block;
+  display: inline-block;
 }
 
 .header-p {
-    margin-left: 20px;
-    margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 40px;
 }
 
 .header-p:hover {
-    color: red;
-    transition: 0.59s;
+  color: red;
+  transition: 0.59s;
 }
 
 .header-mainTitle {
-    padding-top: 25px;
-    margin-left: 70px;
+  padding-top: 25px;
+  margin-left: 70px;
 }
 
 .header-p {
-    padding-top: 40px;
-    float: right;
-    cursor: pointer;
+  padding-top: 40px;
+  float: right;
+  cursor: pointer;
 }
 
 #header-last {
-    margin-right: 70px;
+  margin-right: 70px;
 }
 
 .header-style {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .header-style:hover {
-    color: red;
-    transition: 0.59s;
+  color: red;
+  transition: 0.59s;
 }
 
 .hamburger {
-    cursor: pointer;
-    display: none;
+  cursor: pointer;
+  display: none;
 }
 
 .hamburger div {
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background: white;
-    transition: transform 0.3s ease;
+  width: 30px;
+  height: 3px;
+  margin: 5px 0;
+  background: white;
+  transition: transform 0.3s ease;
 }
 
 
-@media screen and (max-width: 1000px) {
-    .header-responsivity {
-        display: flex;
-    }
+@media screen and (max-width: 1200px) {
+  .header-responsivity {
+      display: flex;
+  }
+  h1 {
+      text-align: center;
+  }
+  .header-first {
+      flex-basis: 93%;
+      text-align: left;
+      padding-left: 20px;
+  }
+  .header-second {
+      padding-top: 47.5px;
+      flex-basis: 7%;
+  }
 
-    .header-first {
-        flex-basis: 93%;
-        text-align: left;
-        padding-left: 20px;
-    }
-    .header-second {
-        padding-top: 47.5px;
-        flex-basis: 7%;
-    }
-
-    header {
-        width: 100%;
-        height: 100px; /* 375 */
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .header-mainTitle {
-        padding-top: 40px;
-        text-align: center;
-        margin: 5px;
-    }
-    header .header-p {
-        margin: 5px;
-        display: none;
-    }
-    #header-last {
-        margin: 5px;
-    }
-    .hamburger {
-        display: block;
-    }
-    @media screen and (max-width: 768px) {
-        .header-first {
-            flex-basis: 90%;
-            text-align: left;
-            padding-left: 20px;
-        }
-        .header-second {
-            padding-top: 47.5px;
-            flex-basis: 10%;
-        }
-    }
+  header {
+      width: 100%;
+      height: 375px; /* 375 */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 200px;
+  }
+  .header-mainTitle {
+      padding-top: 40px;
+      text-align: center;
+      margin: 5px;
+  }
+  header .header-p {
+      margin: 5px;
+  }
+  #header-last {
+      margin: 5px;
+  }
 }
